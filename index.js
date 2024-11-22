@@ -36,7 +36,7 @@ app.get('/total-returns-percentage', (req, res) => {
   let stock3=parseFloat(req.query.stock3);
   let stock4=parseFloat(req.query.stock4);
   let result=stock1+stock2+stock3+stock4;
-  res.send(result.toString());
+ return res.send(result.toString());
 });
 //Endpoint 5: Identify the Status of Stocks based on their Return Value
 app.get('/status', (req, res) => {
